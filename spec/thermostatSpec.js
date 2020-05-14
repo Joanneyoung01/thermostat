@@ -52,6 +52,15 @@ describe('Thermostat', function(){
       }
       expect(thermostat.getCurrentTemperature()).toEqual(25);
     });
+
+    it('sets temperature to 25 degrees if power saving mode is turned on', function(){
+      thermostat.switchPowerSavingModeOff();
+      for(var i = 0; i < 6; i++) {
+        thermostat.up();
+      }
+      thermostat.switchPowerSavingModeOn();
+      expect(thermostat.getCurrentTemperature()).toEqual(25);
+    });
   });
 
   describe('when power saving mode is off', function(){
