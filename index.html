@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <section>
+  <section id="1">
     <h1 id="temperature"></h1>
       <p>
         <button id="temperature-up">+</button>
@@ -19,8 +19,14 @@
     </h1>
   </section>
 
-  <section>
+  <section id="2">
     <h1>Current temperature: <span id="current-temperature"></span></h1>
+    <select id="current-city">
+      <option value="london">London</option>
+      <option value="new york">New York</option>
+      <option value="paris">Paris</option>
+      <option value="grantham">Grantham</option>
+    </select>
   </section>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
