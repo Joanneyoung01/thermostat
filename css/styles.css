@@ -34,3 +34,8 @@ button {
 .high-usage {
   color: red;
 }
+
+/* The container must be positioned relative: */
+select {
+  background-color: cornsilk;
+}
