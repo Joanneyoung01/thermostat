@@ -3,36 +3,42 @@ $(document).ready(function() {
 
   var thermostat = new Thermostat();
 
-  $('#temperature').text(thermostat.temperature);
-  console.log(thermostat.temperature)
+  updateTemperature()
+  // console.log(thermostat.temperature)
 
   //change temperature
   $('#temperature-up').on('click',function(){
     thermostat.up();
-    $('#temperature').text(thermostat.temperature);
+    updateTemperature()
   });
 
   $('#temperature-down').on('click', function(){
     thermostat.down();
-    $('#temperature').text(thermostat.temperature);
+    updateTemperature()
   });
 
   $('#temperature-reset').on('click', function(){
     thermostat.resetTemperature();
-    $('#temperature').text(thermostat.temperature);
+    updateTemperature()
   });
 
   $('#power-saving-mode-off').on('click', function(){
     thermostat.switchPowerSavingModeOff();
     $('#power-saving-status').text("off");
+    updateTemperature()
   });
 
   $('#power-saving-mode-on').on('click', function(){
     thermostat.switchPowerSavingModeOn();
     $('#power-saving-status').text("on");
+    updateTemperature()
   });
 
-  
+  function updateTemperature() {
+    $('#temperature').text(thermostat.temperature);
+    $('#temperature').attr('class', thermostat.energyUsage());
+  };
+
 
 
 });
