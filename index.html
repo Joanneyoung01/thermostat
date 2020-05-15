@@ -15,14 +15,31 @@
         <button id="temperature-up">+</button>
         <button id="temperature-down">-</button>
         <button id="temperature-reset">reset</button>
-        power saving mode is: <span id="power-saving-status">on</span>
-        <button id="power-saving-mode-on">PSM on</button>
-        <button id="power-saving-mode-off">PSM off</button>
+
       </p>
     </h1>
   </section>
+  <section>
+    <div class="two">
+      <p>
+        <div>
+          <!-- Rounded switch -->
+          power saving mode is: <span id="power-saving-status">on</span>
+        </div>
+        <button id="power-saving-mode-on">PSM on</button>
+        <button id="power-saving-mode-off">PSM off</button>
+      </p>
+      <p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </p>
+    </div>
+  </section>
+  
 
-  <section id="two">
+  <section id="three">
     <h1>Current temperature: <span id="current-temperature"></span></h1>
     <select class="custom-select col-5" id="current-city">
       <option value="london">London</option>
