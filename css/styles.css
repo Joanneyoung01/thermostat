@@ -1,15 +1,18 @@
-
-section {
-  background-color: #b4f0e2;
-}
-
 body {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #b4f0e2;
 }
 
-/* #temperature {
-} */
+.wrapper {
+  background-color: #b8bdbc;
+  padding: 100px;
+  margin: 200px;
+}
+
+#temperature {
+  font-size: 100px;
+}
 
 button {
   background-color: #4cc2a6; /* Green */

@@ -8,7 +8,8 @@
 </head>
 
 <body>
-  <section id="1">
+  <div class ="wrapper">
+  <section id="one">
     <h1 id="temperature"></h1>
       <p>
         <button id="temperature-up">+</button>
@@ -21,15 +22,16 @@
     </h1>
   </section>
 
-  <section id="2">
+  <section id="two">
     <h1>Current temperature: <span id="current-temperature"></span></h1>
-    <select id="current-city">
+    <select class="custom-select col-5" id="current-city">
       <option value="london">London</option>
       <option value="new york">New York</option>
       <option value="paris">Paris</option>
       <option value="grantham">Grantham</option>
     </select>
   </section>
+</div>
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="src/thermostat.js"></script>
